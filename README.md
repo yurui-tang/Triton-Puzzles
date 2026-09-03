@@ -1,16 +1,16 @@
-# Triton Puzzles
+# Triton 谜题
 
-w/ [Tejas Ramesh](https://tejas3070.github.io/) and [Keren Zhou](https://www.jokeren.tech/) based on [Triton-Viz](https://github.com/Deep-Learning-Profiling-Tools/triton-viz)
+作者：[Tejas Ramesh](https://tejas3070.github.io/)、[Keren Zhou](https://www.jokeren.tech/)，基于 [Triton-Viz](https://github.com/Deep-Learning-Profiling-Tools/triton-viz) 构建
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/srush/Triton-Puzzles/blob/main/Triton-Puzzles.ipynb)
 
 
-Programming for accelerators such as GPUs is critical for modern AI systems.
-This often means programming directly in proprietary low-level languages such as CUDA. [Triton](https://github.com/openai/triton/) is an alternative open-source language that allows you to code at a higher-level and compile to accelerators like GPU.
+在为 GPU 等加速器编程时，性能对现代 AI 系统至关重要。
+过去我们通常直接使用 CUDA 之类的低层次专有语言来写。[Triton](https://github.com/openai/triton/) 是一个开源的替代方案，它让你能以更高层次的语法编写代码，并编译到 GPU 等加速器上运行。
 
-Coding for Triton is very similar to Numpy and PyTorch in both syntax and semantics. However, as a lower-level language, there are a lot of details that you need to keep track of. In particular, one area that learners have trouble with is memory loading and storage which is critical for speed on low-level devices.
+Triton 的语法和语义与 Numpy、PyTorch 非常相似。但作为一门更贴近硬件的语言，它有很多细节需要你亲自把控。学习者通常最容易卡住的点，就是内存的加载与存储 —— 而这恰恰是决定性能的关键。
 
-This set of puzzles is meant to teach you how to use Triton from first principles in an interactive fashion. You will start with trivial examples and build your way up to real algorithms like Flash Attention and Quantized neural networks. These puzzles **do not** need to run on GPU since they use a Triton interpreter.
+这套 puzzle 的目的是以互动的方式，从最基本的原理开始教你使用 Triton。你会从最简单的例子出发，一步步实现 Flash Attention、量化神经网络等真实算法。这些 puzzle **不需要** 真的在 GPU 上运行，它们使用的是 Triton 解释器。
 
 Discord: https://discord.gg/gpumode #triton-puzzles
 
@@ -18,7 +18,7 @@ Discord: https://discord.gg/gpumode #triton-puzzles
 
 
 
-If you are into this kind of thing, this is 7th in a series of these puzzles.
+如果你喜欢这类风格，这已经是这个系列的第 7 套 puzzle 了：
 
 * https://github.com/srush/gpu-puzzles
 * https://github.com/srush/tensor-puzzles
